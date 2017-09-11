@@ -101,6 +101,7 @@ class Configuration implements ConfigurationInterface
                                         ->scalarNode('quality')->defaultValue(80)->end()
                                         ->scalarNode('format')->defaultValue('jpg')->end()
                                         ->scalarNode('constraint')->defaultValue(true)->end()
+                                        ->variableNode('extra')->defaultNull()->end()
                                     ->end()
                                 ->end()
                             ->end()
